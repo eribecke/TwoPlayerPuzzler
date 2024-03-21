@@ -25,5 +25,9 @@ public class PlayerMovement : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 5, ForceMode2D.Impulse);
         }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.down * 5, ForceMode2D.Impulse);
+        }
     }
 }
